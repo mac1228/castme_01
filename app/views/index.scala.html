@@ -1,7 +1,119 @@
 @(message: String)
 
-@main("Welcome to Play 2.1") {
-    
-    @play20.welcome(message, style = "Java")
-    
+@main("CastMe") {
+	<nav class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href = "#"><img width = "40%" src = "@routes.Assets.at("images/CastMe-Logo.gif")"></a>
+          <!--<a class="navbar-brand" href="#">CastMe</a>-->      
+        </div>
+        <!--
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">How it Works</a></li>
+            <li><a href="#">About Us</a></li>
+        </ul>
+        -->
+      </div>
+    </nav>
+    <div class="container">
+    	<section class = "row">
+    		<aside class = "col-md-2">
+                <section class = "row">
+            		<ul class = "nav nav-pills nav-stacked">
+                        <li class="nav-header">Selection</li>
+                        <li class = "active"><a href="#">Actors</a></li>
+                        <li><a href="#">Directors</a></li>
+                        <li><a href="#">Studio</a></li>
+                        <li><a href="#">Genre</a></li>
+                        <li><a href="#">Release Date</a></li>
+                    </ul>
+                </section>
+                <section class = "row">
+                    
+                </section>
+    		</aside>
+    		<article class = "col-md-7">
+    			<section class = "row">
+                    <div class="col-sm-6 col-md-3">
+                        <div class="thumbnail">
+                            <img src="@routes.Assets.at("images/tom_cruise.jpg")">
+                            <div class="caption">
+                                <h5>Tom Cruise</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <div class="thumbnail">
+                            <img src="@routes.Assets.at("images/denzel_washington.jpg")">
+                            <div class="caption">
+                                <h5>Denzel Washington</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <div class="thumbnail">
+                            <img src="@routes.Assets.at("images/penelope_cruz.jpg")">
+                            <div class="caption">
+                                <h5>Penlope Cruz</h5>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class = "row">
+                    <div class = "status-box">
+                    	<section class = "row">
+                            
+                    		<div class = "col-md-3">
+                                <p>Director</p>
+                                <canvas id="myCanvas" width="50%" height="50%" style="border:1px solid #000000;border-radius:1em; margin:1em">
+                                </canvas>
+                    		</div>
+                            <div class = "col-md-3">
+                                <p>Studio</p>
+                                <canvas id="myCanvas" width="50%" height="50%" style="border:1px solid #000000;border-radius:1em; margin:1em">
+                                </canvas>
+                            </div>
+                            <div class = "col-md-3">
+                                <p>Genre</p>
+                                <canvas id="myCanvas" width="50%" height="50%" style="border:1px solid #000000;border-radius:1em; margin:1em">
+                                </canvas>
+                            </div>
+                            <div class = "col-md-3">
+                                <p>Release</p>
+                                <canvas id="myCanvas" width="50%" height="50%" style="border:1px solid #000000;border-radius:1em; margin:1em">
+                                </canvas>
+                            </div>
+                            
+                    	</section>
+                    	<section class = "row">
+                            <p class = "text-center">Actors</p>                            
+                    	</section>
+                    </div>
+                </section>
+    		</article>
+            <aside class = "col-md-3">   
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Success Metrics</h3>
+                    </div>
+                    <div class="panel-body">
+                        <ul class = "list-group">
+                            <li class="list-group-item">Box Office Revenue</li>
+                            <li class="list-group-item">Star Rating</li>
+                            <li class="list-group-item">Critics</li>
+                            <li class="list-group-item">Awards</li>
+                            <li class="list-group-item">Box Office Run</li>
+                        </ul> 
+                    </div>
+                </div>            
+                          
+            </aside>
+    	</section>
+    	
+    	<footer class = "col-md-3 col-md-offset-9">
+    		&copy; 2013 Technicolor
+    	</footer>
+
+    </div>
 }
+

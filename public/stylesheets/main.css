@@ -1,0 +1,11 @@
+.status-box{
+	padding: 0.5em;
+	margin: 1em;
+	background-color: #f8f8f8;
+  	border-color: #e7e7e7;
+	border-radius: 0.3em;
+}
+
+.navbar{
+	margin: 1em;
+}
