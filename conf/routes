@@ -5,5 +5,12 @@
 # Home page
 GET     /                           controllers.Application.index()
 
+# Selections
+GET		/actors						controllers.Application.actors()
+GET		/directors				    controllers.Application.directors()
+GET		/studio					    controllers.Application.studio()
+GET		/genre						controllers.Application.genre()
+GET		/releasedate				controllers.Application.releaseDate()
+
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.at(path="/public", file)
